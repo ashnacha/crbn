@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "360447727600",
+    "project_id": "crbn-csci499",
+    "storage_bucket": "crbn-csci499.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360447727600:android:a49d28faba7ab64970af35",
+        "android_client_info": {
+          "package_name": "csci499.crbn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360447727600-r654ucst227t2e6ferunjlgv6fe7hlgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFJCRFeOA4nAgJIcTiE10Gpzzo4SKWQEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360447727600-r654ucst227t2e6ferunjlgv6fe7hlgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
