@@ -43,6 +43,7 @@ public class LevelTwoActivity extends AppCompatActivity {
 
     ImageView imageView;
     String currEmail = "";
+    Button profilebtn_level2;
 
 
     @Override
@@ -56,7 +57,7 @@ public class LevelTwoActivity extends AppCompatActivity {
         currEmail = sharedData.getCurr_email();
         uploadphoto = findViewById(R.id.uploadphoto_level2);
         imageView = findViewById(R.id.imageview_level2);
-
+        profilebtn_level2 = findViewById(R.id.profilebtn_level2);
 
         completeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,6 +97,14 @@ public class LevelTwoActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 uploadPic();
+            }
+        });
+
+        profilebtn_level2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LevelTwoActivity.this, ProfileActivity.class);
+                startActivityForResult(intent, 0);
             }
         });
     }

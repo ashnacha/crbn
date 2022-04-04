@@ -15,6 +15,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.ArrayList;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -119,7 +121,8 @@ public class CreateAccountActivity  extends AppCompatActivity {
                 name = nameEdit.getText().toString();
                 email = emailEdit.getText().toString();
                 password = passwordEdit.getText().toString();
-                User user = new User(name, email, password, "1");
+                ArrayList<String> pics = new ArrayList<>();
+                User user = new User(name, email, password, "1", pics);
                 // Log.d("TESTT",  firstName + lastName + email + password);
                 db.collection("users").document(email).set(user);
 

@@ -77,15 +77,24 @@ Phase 2 of CRBN will be launching in June 2022. We will notify you as the date a
 
 
         <Button
-            android:id="@+id/go_to_challenge"
+        android:id="@+id/go_to_challenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to my challenge"
+        android:padding="10dp"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        />
+
+        <Button
+            android:id="@+id/logout_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go to my challenge"
+            android:text="Logout"
             android:padding="10dp"
             android:textAlignment="viewStart"
             android:textSize="14sp"
             />
-
 
     </LinearLayout>
 </RelativeLayout>

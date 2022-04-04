@@ -45,6 +45,7 @@ public class LevelThreeActivity extends AppCompatActivity {
     ImageView imageView;
     String currEmail = "";
     TextView text_count;
+    Button profilebtn_level3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +59,7 @@ public class LevelThreeActivity extends AppCompatActivity {
         text_count = findViewById(R.id.upload_count_text);
         currEmail = sharedData.getCurr_email();
         db = FirebaseFirestore.getInstance();
+        profilebtn_level3 = findViewById(R.id.profilebtn_level3);
 
 
         Log.d("curremail","curr" + currEmail);
@@ -135,6 +137,15 @@ public class LevelThreeActivity extends AppCompatActivity {
                 uploadPic();
             }
         });
+
+        profilebtn_level3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LevelThreeActivity.this, ProfileActivity.class);
+                startActivityForResult(intent, 0);
+            }
+        });
+
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

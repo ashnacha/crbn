@@ -1,11 +1,17 @@
 package csci499.crbn;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
 
     String name;
     String email;
     String password;
     String level;
+
+
+    List<String> pictures;
 
     public User(){
 
@@ -16,6 +22,15 @@ public class User {
         email = e;
         password =p;
         level=l;
+        pictures = new ArrayList<>();
+    }
+
+    public User(String n, String e, String p, String l, List<String> pics){
+        name = n;
+        email = e;
+        password =p;
+        level=l;
+        pictures = pics;
     }
     public String getName() {
         return name;
@@ -47,5 +62,14 @@ public class User {
 
     public void setLevel(String level) {
         this.level = level;
+    }
+
+
+    public List<String> getPictures() {
+        return pictures;
+    }
+
+    public void setPictures(List<String> p) {
+        this.pictures = p;
     }
 }

@@ -27,6 +27,7 @@ public class ProfileActivity extends AppCompatActivity {
     Button communityButton;
     Button challengeButton;
     TextView congrats_text;
+    Button logout_button;
 
     String level = "";
     @Override
@@ -42,6 +43,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         communityButton = findViewById(R.id.community_page);
         challengeButton = findViewById(R.id.go_to_challenge);
+        logout_button = findViewById(R.id.logout_button);
 
         DocumentReference docIdRef = db.collection("users").document(currEmail);
         Log.d("email", "cur"  + currEmail);
@@ -77,6 +79,13 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ProfileActivity.this, CommunityActivity.class);
+                startActivityForResult(intent, 0);
+            }
+        });
+        logout_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
                 startActivityForResult(intent, 0);
             }
         });

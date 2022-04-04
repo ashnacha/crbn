@@ -73,6 +73,7 @@ public class LevelOneActivity extends AppCompatActivity {
 
     ImageView imageView;
     String currEmail = "";
+    Button profilebtn_level1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,6 +89,7 @@ public class LevelOneActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageview);
         uploadphoto1 = findViewById(R.id.uploadphoto1);
         uploadphoto2 = findViewById(R.id.uploadphoto2);
+        profilebtn_level1 = findViewById(R.id.profilebtn_level1);
 
         completeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,6 +152,14 @@ public class LevelOneActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 uploadPic();
+            }
+        });
+
+        profilebtn_level1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LevelOneActivity.this, ProfileActivity.class);
+                startActivityForResult(intent, 0);
             }
         });
 
