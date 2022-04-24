@@ -46,6 +46,7 @@
 
     <LinearLayout
         android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/card_view_header"
@@ -68,31 +69,34 @@ Phase 2 of CRBN will be launching in June 2022. We will notify you as the date a
 
         <Button
             android:id="@+id/community_page"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="Community Page"
-            android:textAlignment="viewStart"
+            android:textAlignment="center"
+            android:backgroundTint="@android:color/holo_green_light"
             android:textSize="14sp" />
 
 
         <Button
         android:id="@+id/go_to_challenge"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Go to my challenge"
         android:padding="10dp"
-        android:textAlignment="viewStart"
+        android:textAlignment="center"
+            android:backgroundTint="@android:color/holo_green_light"
         android:textSize="14sp"
         />
 
         <Button
             android:id="@+id/logout_button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Logout"
             android:padding="10dp"
-            android:textAlignment="viewStart"
+            android:textAlignment="center"
+            android:backgroundTint="@android:color/holo_green_light"
             android:textSize="14sp"
             />
 

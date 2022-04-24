@@ -103,6 +103,7 @@
             android:id="@+id/submitButton"
             android:text="Create Account"
             android:background="@drawable/roundedbutton"
+            android:backgroundTint="@android:color/holo_green_light"
             android:layout_marginTop="50dp"/>
 
         <TextView

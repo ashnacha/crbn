@@ -50,16 +50,19 @@
             android:text="Be vegetarian for a week"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Share some meals"
             android:id="@+id/takephoto_level3"
+            android:backgroundTint="#96e3b4"
+
             />
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save"
             android:id="@+id/uploadphoto_level3"
+            android:backgroundTint="#96e3b4"
 
             />
         <TextView
@@ -100,14 +103,17 @@
             android:layout_marginTop="50dp"
             android:layout_marginHorizontal="10dp"
             android:layout_marginBottom="20dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+
             android:visibility="invisible"/>
 
         <Button
             android:id="@+id/profilebtn_level3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="View Profile"
-            android:textAlignment="viewStart"
+            android:textAlignment="center"
+            android:backgroundTint="@android:color/holo_green_light"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
     </androidx.appcompat.widget.LinearLayoutCompat>
