@@ -94,6 +94,17 @@ Opt into online billing"/>
             android:layout_marginBottom="20dp"
             android:backgroundTint="@android:color/holo_green_dark"
             android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/learnMoreTextLevel2"
+
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+android:text="Environmental Protection Agency estimated that 60% of junk mail is trashed and landfilled, and NOT recycled. Junk mail produces more than 51 million metric tons of greenhouse gases each year. Junk mail adds 1 billion pounds of waste to landfills each year. This small change can make a big difference on the environment! "/>
         <Button
             android:id="@+id/profilebtn_level2"
             android:layout_width="match_parent"
@@ -103,5 +114,14 @@ Opt into online billing"/>
             android:textSize="14sp"
             android:backgroundTint="@android:color/holo_green_light"
             tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn More"
+            android:id="@+id/learnMoreButtonLevel2"
+            android:background="@android:color/transparent"
+            />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>

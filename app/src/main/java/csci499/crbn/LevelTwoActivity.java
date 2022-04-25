@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -45,6 +46,8 @@ public class LevelTwoActivity extends AppCompatActivity {
     String currEmail = "";
     Button profilebtn_level2;
 
+    Button learnMoreButtonLevel2;
+    TextView learnMoreTextLevel2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,8 @@ public class LevelTwoActivity extends AppCompatActivity {
         uploadphoto = findViewById(R.id.uploadphoto_level2);
         imageView = findViewById(R.id.imageview_level2);
         profilebtn_level2 = findViewById(R.id.profilebtn_level2);
+        learnMoreButtonLevel2 = findViewById(R.id.learnMoreButtonLevel2);
+        learnMoreTextLevel2 = findViewById(R.id.learnMoreTextLevel2);
 
         completeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,6 +112,14 @@ public class LevelTwoActivity extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
+        learnMoreButtonLevel2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                learnMoreTextLevel2.setVisibility(View.VISIBLE);
+            }
+        });
+
+
     }
 
     @Override

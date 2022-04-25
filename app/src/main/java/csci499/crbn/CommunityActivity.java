@@ -38,6 +38,7 @@ public class CommunityActivity  extends AppCompatActivity {
     private FirebaseFirestore firebaseFirestore;
     private FirestoreRecyclerAdapter adapter;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private Button viewProfileButtonCommunity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,7 @@ public class CommunityActivity  extends AppCompatActivity {
 
         mFireStoreList = findViewById(R.id.firestore_list);
         firebaseFirestore = FirebaseFirestore.getInstance();
+        viewProfileButtonCommunity = findViewById(R.id.viewProfileButtonCommunity);
 
         Query query = firebaseFirestore.collection("users");
 
@@ -79,6 +81,14 @@ public class CommunityActivity  extends AppCompatActivity {
         mFireStoreList.setHasFixedSize(true);
         mFireStoreList.setLayoutManager(new LinearLayoutManager(this));
         mFireStoreList.setAdapter(adapter);
+
+        viewProfileButtonCommunity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CommunityActivity.this, ProfileActivity.class);
+                startActivityForResult(intent, 0);
+            }
+        });
 
     }
 

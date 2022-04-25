@@ -110,12 +110,21 @@
             android:id="@+id/completeLevel1"
             android:text="Complete Level 1"
             android:background="@drawable/roundedbutton"
-            android:layout_marginTop="50dp"
             android:layout_marginHorizontal="10dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:backgroundTint="@android:color/holo_green_dark"
             android:visibility="invisible"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/learnMoreTextLevel1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:text="The creation of plastic involves drilling and extracting oil, a process called fracking. In fact, it takes 17 million barrels of oil per year to make a year’s supply of disposable water bottles. Moreover, it can take hundreds or even thousands of years for plastic to break down so the environmental damage is long-lasting. 500 single-use plastic bags are replaced by using one reusable bag for one year.
+"/>
         <Button
             android:id="@+id/profilebtn_level1"
             android:layout_width="match_parent"
@@ -125,9 +134,17 @@
             android:textSize="14sp"
             android:backgroundTint="@android:color/holo_green_light"
             tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn More"
+            android:id="@+id/learnMoreButtonLevel1"
+            android:background="@android:color/transparent"
+            />
+
+
+
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

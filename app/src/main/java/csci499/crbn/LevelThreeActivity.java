@@ -46,6 +46,8 @@ public class LevelThreeActivity extends AppCompatActivity {
     String currEmail = "";
     TextView text_count;
     Button profilebtn_level3;
+    Button learnMoreButtonLevel3;
+    TextView learnMoreTextLevel3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +62,8 @@ public class LevelThreeActivity extends AppCompatActivity {
         currEmail = sharedData.getCurr_email();
         db = FirebaseFirestore.getInstance();
         profilebtn_level3 = findViewById(R.id.profilebtn_level3);
-
+        learnMoreButtonLevel3 = findViewById(R.id.learnMoreButtonLevel3);
+        learnMoreTextLevel3 = findViewById(R.id.learnMoreTextLevel3);
 
         Log.d("curremail","curr" + currEmail);
 
@@ -143,6 +146,13 @@ public class LevelThreeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(LevelThreeActivity.this, ProfileActivity.class);
                 startActivityForResult(intent, 0);
+            }
+        });
+
+        learnMoreButtonLevel3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                learnMoreTextLevel3.setVisibility(View.VISIBLE);
             }
         });
 

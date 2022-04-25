@@ -15,6 +15,7 @@ import android.util.Size;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -67,6 +68,7 @@ public class LevelOneActivity extends AppCompatActivity {
     Button uploadphoto1;
     Button uploadphoto2;
 
+    Button learnMoreButtonLevel1;
     int CAMERA_PIC_REQUEST= 1;
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
@@ -74,6 +76,8 @@ public class LevelOneActivity extends AppCompatActivity {
     ImageView imageView;
     String currEmail = "";
     Button profilebtn_level1;
+    TextView learnMoreTextLevel1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +94,9 @@ public class LevelOneActivity extends AppCompatActivity {
         uploadphoto1 = findViewById(R.id.uploadphoto1);
         uploadphoto2 = findViewById(R.id.uploadphoto2);
         profilebtn_level1 = findViewById(R.id.profilebtn_level1);
+
+        learnMoreButtonLevel1 = findViewById(R.id.learnMoreButtonLevel1);
+        learnMoreTextLevel1 = findViewById(R.id.learnMoreTextLevel1);
 
         completeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,6 +161,14 @@ public class LevelOneActivity extends AppCompatActivity {
                 uploadPic();
             }
         });
+
+        learnMoreButtonLevel1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                learnMoreTextLevel1.setVisibility(View.VISIBLE);
+            }
+        });
+
 
         profilebtn_level1.setOnClickListener(new View.OnClickListener() {
             @Override

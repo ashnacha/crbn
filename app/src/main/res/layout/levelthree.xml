@@ -107,6 +107,18 @@
 
             android:visibility="invisible"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize="12sp"
+            android:id="@+id/learnMoreTextLevel3"
+
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:text="​​Eating a veggie diet means 2.5 x less carbon emissions than a meat diet. By eating vegetarian food for a year you could save the same amount of emissions as a family taking a small car off the road for 6 months!
+ "/>
+
         <Button
             android:id="@+id/profilebtn_level3"
             android:layout_width="match_parent"
@@ -116,5 +128,14 @@
             android:backgroundTint="@android:color/holo_green_light"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn More"
+            android:id="@+id/learnMoreButtonLevel3"
+            android:background="@android:color/transparent"
+            />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>
